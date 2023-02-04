@@ -6,6 +6,8 @@
 
 body {
     background-image: url(../images/peakpx.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #getMessages{
