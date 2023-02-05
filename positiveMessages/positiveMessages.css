@@ -87,6 +87,7 @@ body {
 
 #musicPlayer h3{
    margin-bottom: 1rem;
+   color: white;
 }
 
 @media screen and (max-width: 992px) {
