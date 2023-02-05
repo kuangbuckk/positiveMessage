@@ -11,9 +11,9 @@ function generateRandomNumber(num){
 }
 
 const collectiveMessage = {
-    mood: ['sad', 'upset', 'angry', 'anxious'],
+    mood: ['sad', 'upset', 'lost', 'anxious', 'lonely', 'heartbroken', 'hopeless'],
     alternateMood: ['happy', 'laughing', 'enjoying ur life', 'living like u have never lived', 'enjoying things like before'],
-    todo: ['having a cup of coffee', 'going for a walk', 'getting early sleep and healthy meals', 'deleting negative apps', 'starting a new hobby', 'learning how to play a new instrument']
+    todo: ['having a cup of coffee', 'going for a walk', 'getting early sleep and healthy meals', 'detoxing from negative apps', 'starting a new hobby', 'learning how to play a new instrument', 'talking out about your feelings']
 }
 
 const macMillerQuote = ["\"No matter where life takes me, find me with a smile.\" - Mac Miller", "\"The life you live is more important than the words you speak.\" - Mac Miller", "\"Enjoy the best things in your life cuz you aint gonna get to live it twice.\" - Mac Miller", "\"Someone told me sleep was the cousin of death and following the dollar finds nothing but stress.\" - Mac Miller",
@@ -33,10 +33,10 @@ for(let prop in collectiveMessage){
             personalWisdom.push(`I guess you have been currently "${collectiveMessage[prop][optionIdx]}".`);
             break;
         case 'alternateMood':
-            personalWisdom.push(`You will surely be "${collectiveMessage[prop][optionIdx]}".`);
+            personalWisdom.push(`You will surely be "${collectiveMessage[prop][optionIdx]}"`);
             break;
         case 'todo':
-            personalWisdom.push(`By doing this activity: "${collectiveMessage[prop][optionIdx]}".`);
+            personalWisdom.push(`by doing this activity: "${collectiveMessage[prop][optionIdx]}". Hope you will have a good day <3!!`);
             break;
         default:
             personalWisdom.push('There is not enough info.');
