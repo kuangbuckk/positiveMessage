@@ -36,7 +36,7 @@ for(let prop in collectiveMessage){
             personalWisdom.push(`You will surely be "${collectiveMessage[prop][optionIdx]}"`);
             break;
         case 'todo':
-            personalWisdom.push(`by doing this activity: "${collectiveMessage[prop][optionIdx]}". Hope you will have a good day <3!!`);
+            personalWisdom.push(`by doing this activity: "${collectiveMessage[prop][optionIdx]}". Hope you will have a good day and comeback for more messages <3!!`);
             break;
         default:
             personalWisdom.push('There is not enough info.');
