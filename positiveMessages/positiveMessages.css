@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     border: none;
+    font-family: MinecraftFont;
 }
 
 @font-face {
@@ -27,14 +28,14 @@ body {
     border-radius: 10px;
     text-align: center;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: MinecraftFont;
+    
 }
 
 #getMessages button{
@@ -68,4 +69,21 @@ body {
     display: block;
     width: 5rem;
     height: 3rem;
+}
+
+#musicPlayer{
+    background-color: rgb(100, 102, 216);  
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    margin-right: -50%;
+    margin-right: -50%;
+    transform: translate(-50%, -10%);
+}
+
+#musicPlayer h3{
+   margin-bottom: 1rem;
 }
