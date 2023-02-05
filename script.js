@@ -11,7 +11,7 @@ function generateRandomNumber(num){
 const collectiveMessage = {
     mood: ['sad', 'upset', 'angry', 'anxious'],
     alternateMood: ['happy', 'laughing', 'enjoying ur life', 'living like u have never lived', 'enjoying things like before'],
-    todo: ['have a cup of coffee', 'go for a walk', 'early sleep and healthy meals', 'delete negative apps', 'start new hobby', 'learn how to play new instrument']
+    todo: ['having a cup of coffee', 'going for a walk', 'getting early sleep and healthy meals', 'deleting negative apps', 'starting a new hobby', 'learning how to play a new instrument']
 }
 
 let personalWisdom = [];
@@ -21,7 +21,7 @@ for(let prop in collectiveMessage){
     let optionIdx = generateRandomNumber(collectiveMessage[prop].length);
     switch(prop){
         case 'mood':
-            personalWisdom.push(`You currently are "${collectiveMessage[prop][optionIdx]}".`);
+            personalWisdom.push(`I guess you have been currently "${collectiveMessage[prop][optionIdx]}".`);
             break;
         case 'alternateMood':
             personalWisdom.push(`You will surely be "${collectiveMessage[prop][optionIdx]}".`);
