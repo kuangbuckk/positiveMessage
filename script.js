@@ -1,5 +1,8 @@
 let button = document.getElementById('messageButtonGenerator');
 let message = document.getElementById('message');
+let getBack = document.getElementById('getBack');
+let container = document.getElementById('getMessages');
+let buttons = document.getElementsByClassName('buttons');
 
 function generateRandomNumber(num){
     return Math.floor(Math.random() * num);
@@ -24,7 +27,7 @@ for(let prop in collectiveMessage){
             personalWisdom.push(`You will surely be "${collectiveMessage[prop][optionIdx]}".`);
             break;
         case 'todo':
-            personalWisdom.push(`By doing these activities "${collectiveMessage[prop][optionIdx]}".`);
+            personalWisdom.push(`By doing this activity: "${collectiveMessage[prop][optionIdx]}".`);
             break;
         default:
             personalWisdom.push('There is not enough info.');
@@ -38,11 +41,12 @@ function formatWisdom(wisdom) {
 
 function showMessage(){
     message.innerHTML = formatWisdom(personalWisdom);
-    button.innerHTML = "Come back tomorrow!";
-    button.style.cursor = "default";
-  
-    //add your code here
-    button.removeEventListener('click', showFortune);
+    message.style.display = "inline-block";
+    // button.innerHTML = "Regenerate";
+    button.style.display = "none";
+    // buttons.style.width = "5rem";
+    // buttons.style.height = "3rem";
+    getBack.style.display = "inline";
 }
 
 button.addEventListener('click', showMessage);
